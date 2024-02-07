@@ -1,6 +1,8 @@
 from ossapi import Ossapi
 
-api = Ossapi(00000, 'mytoken XD')
+secret = input("enter token : ")
+
+api = Ossapi(30107, secret)
 
 print(api.user(19587231, mode="osu").username)
 print(api.beatmap(221777).beatmapset_id)
